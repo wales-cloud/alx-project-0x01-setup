@@ -1,11 +1,12 @@
-export interface UserData {
-  id?: number;
+export interface UserProps {
+  id: number;
   name: string;
   username: string;
   email: string;
 }
 
-export interface UserModalProps {
-  onClose: () => void;
-  onSubmit: (user: UserData) => void;
+export interface UserData {
+  name: string;
+  username: string;
+  email: string;
 }
