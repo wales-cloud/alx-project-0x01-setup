@@ -1,9 +1,15 @@
-const Home: React.FC = () => {
+import Header from "@/components/layout/Header";
+
+const PostsPage: React.FC = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-7xl font-thin">Welcome Page</h1>
-    </div>
+    <>
+      <Header />
+      <main className="p-6">
+        <h1 className="text-3xl font-semibold mb-4">Posts</h1>
+        <p>This is where the list of posts will go.</p>
+      </main>
+    </>
   );
 };
 
-export default Home;
+export default PostsPage;
