@@ -13,10 +13,12 @@ const Users: React.FC<UsersPageProps> = ({ posts }) => {
       <main className="p-4">
         <div className="flex justify-between">
           <h1 className="text-2xl font-semibold">User Directory</h1>
-          <button className="bg-purple-700 px-4 py-2 rounded-full text-white">Add User</button>
+          <button className="bg-purple-700 px-4 py-2 rounded-full text-white">
+            Add User
+          </button>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          {posts?.map((user: UserProps, idx: number) => (
+          {posts.map((user, idx) => (
             <UserCard {...user} key={idx} />
           ))}
         </div>
